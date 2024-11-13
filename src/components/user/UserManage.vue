@@ -274,7 +274,7 @@
                         });
                         this.centerDialogVisible = false
                         this.loadPost()
-                        this. resetForm()
+                        this.resetForm()
                     }else{
                         this.$message({
                             message: '操作失败！',

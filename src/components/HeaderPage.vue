@@ -4,7 +4,7 @@
             <i :class="icon" style="font-size: 20px;cursor: pointer;" @click="collapse"></i>
         </div>
         <div style="flex: 1;text-align: center;font-size: 34px;">
-            <span>资产信息管理系统</span>
+            <span>管理系统</span>
         </div>
         <el-dropdown>
             <span>{{user.name}}</span><i class="el-icon-arrow-down" style="margin-left: 5px;"></i>

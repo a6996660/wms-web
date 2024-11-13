@@ -20,6 +20,15 @@ function addNewRoute(menuList) {
                 }
 
                 routeItem.children.push(childRoute)
+
+                routeItem.children.push({
+                    path:'/storage/schedule',
+                    name:'调度任务',
+                    meta:{
+                        title:'调度任务'
+                    },
+                    component:()=>import('../components/storage/ScheduleManage.vue')
+                })
             })
         }
     })
