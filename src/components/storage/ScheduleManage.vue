@@ -364,7 +364,7 @@ export default {
           this.resetForm()
         } else {
           this.$message({
-            message: '操作失败！',
+            message: res?.msg,
             type: 'error'
           });
         }
@@ -384,7 +384,7 @@ export default {
           // this.resetForm()
         } else {
           this.$message({
-            message: '操作失败！',
+            message: res?.msg,
             type: 'error'
           });
         }
@@ -444,7 +444,7 @@ export default {
         pageSize: this.pageSize,
         pageNum: this.pageNum,
         param: {
-          // businessId: this.businessId
+          name: this.name
         }
       }).then(res => res.data).then(res => {
         console.log(res)
