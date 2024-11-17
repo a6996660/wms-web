@@ -8,7 +8,7 @@ import VueRouter from 'vue-router';
 import router from './router';
 import store from './store';
 Vue.prototype.$axios=axios;
-Vue.prototype.$httpUrl='http://dingxuhui.yyboxdns.com:10706'
+
 // Vue.prototype.$httpUrl='http://127.0.0.1:8090'
 Vue.config.productionTip = false
 //Vue.use(ElementUI);
