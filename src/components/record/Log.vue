@@ -41,7 +41,10 @@
       </el-table-column>
       <el-table-column prop="type" label="日志类型" width="180">
       </el-table-column>
-      <el-table-column prop="message" label="日志内容" width="180">
+      <el-table-column label="日志内容" align="left" min-width="300" :show-overflow-tooltip="true">
+        <template slot-scope="{row}">
+          <span>{{ row.message }}</span>
+        </template>
       </el-table-column>
       <el-table-column prop="operator" label="操作人" width="180">
       </el-table-column>
