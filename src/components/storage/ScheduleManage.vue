@@ -104,7 +104,7 @@
         width="80%"
         center>
 
-      <el-form ref="form" :inline="true" :rules="rules" :model="form" label-position="left" label-width="200px"
+      <el-form ref="form" :inline="false" :rules="rules" :model="form" label-position="left" label-width="200px"
                class="demo-ruleForm">
         <el-form-item label="id" >
           <el-input v-model="form.id" disabled></el-input>
@@ -119,7 +119,11 @@
           <el-input v-model="form.cron"></el-input>
         </el-form-item>
         <el-form-item label="参数">
-          <el-input v-model="form.params"></el-input>
+          <el-input
+              type="textarea"
+              :autosize="{ minRows: 2, maxRows: 10}"
+              placeholder="请输入内容"
+              v-model="form.params"></el-input>
         </el-form-item>
         <el-form-item label="任务类型">
           <el-input v-model="form.tasktype"></el-input>
